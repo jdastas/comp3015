@@ -1,0 +1,44 @@
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+#logo {
+    width: 10%;
+}
+
+/* Estilos para pantallas menores a 600px */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    /* h1 {
+        font-size: xx-large;
+    } */
+    p  {
+        font-size: 16pt;
+    }
+    #logo {
+        width: 20%;
+        margin: 0 40%;
+    }
+}
+
+/* Estilos para pantallas mayores a 600px */
+@media (min-width: 601px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+@media print and (min-width: 601px) {
+    h1 {
+        font-size: 84pt;
+    }
+    #logo {
+        display: none;
+        /* visibility: hidden; */
+    }
+}
