@@ -16,29 +16,36 @@
 <body>
     <div class="container">
         <h3>Formulario muy sencillo</h3>
-        <form action="manejarDatos.php" method="get" enctype="multipart/form-data">
-            Username:
-            <input type="text" name="nombre" value="" size="10" maxlength="7" alt="Entre su nombre"
-                placeholder="XYZ-123" pattern="[A-Z]{3}-[0-9]{3}" required />
-            <br />
-            Password:
-            <input type="password" name="clave" value="" placeholder="Your password" required />
-            <br />
-            <input type="checkbox" name="fruta[]" id="manzana" value="apple">
-            <label for="manzana">manzana</label>
-            <input type="checkbox" name="fruta[]" id="pera" value="pear">
-            <label for="pera">pera</label>
-            <input type="checkbox" name="fruta[]" id="guineo" value="banana">
-            <label for="guineo">guineo</label>
-            <br>
-            <fieldset class="border rounded p-2 mt-4 mb-4 d-inline-block">
-                <input type="radio" name="genero" id="masculino" value="masculino" />
-                <label for="masculino">Hombre</label>
-                <input type="radio" name="genero" id="femenino" value="femenino" />
-                <label for="femenino">Mujer</label>
+        <form action="manejarDatos.php" method="get" enctype="multipart/form-data" class="form border p-4 rounded">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Username</label>
+                <input type="text" name="nombre" id="nombre" class="form-control" value="" size="10" maxlength="7"
+                    alt="Entre su nombre" placeholder="XYZ-123" pattern="[A-Z]{3}-[0-9]{3}" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="clave" class="form-label">Password</label>
+                <input type="password" name="clave" value="" placeholder="Your password" required
+                    class="form-control" />
+            </div>
+
+            <fieldset class="border rounded p-2 mt-2 mb-2">
+                <input type="checkbox" name="fruta[]" id="manzana" value="apple" class="form-check-input">
+                <label for="manzana" class="form-check-label">manzana</label>
+                <input type="checkbox" name="fruta[]" id="pera" value="pear" class="form-check-input">
+                <label for="pera" class="form-check-label">pera</label>
+                <input type="checkbox" name="fruta[]" id="guineo" value="banana" class="form-check-input">
+                <label for="guineo" class="form-check-label">guineo</label>
+            </fieldset>
+            <fieldset class="border rounded shadow-sm p-2 mt-4 mb-4 d-inline-block">
+                <!-- <legend>Generos</legend> -->
+                <input type="radio" name="genero" id="masculino" value="masculino" class="form-check-input" />
+                <label for="masculino" class="form-check-label">Hombre</label>
+                <input type="radio" name="genero" id="femenino" value="femenino" class="form-check-input" />
+                <label for="femenino" class="form-check-label">Mujer</label>
             </fieldset>
             <br>
-            <input type="file" name="archivo" />
+            <input type="file" name="archivo" class="form-control" />
             <input type="hidden" name="ciudad" name="Arecibo" />
             <br>
             <input type="image" name="btnImagen" src="./images/accept.png" style="width:50px;margin:20px 20px 0px;" />
