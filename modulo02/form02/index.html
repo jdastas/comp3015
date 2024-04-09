@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <form action="procesar.php" class="form border rounded m-6 p-4">
+            <input type="number" name="edad" id="edad" value="18" min="18" max="80" class="form-control">
+            <br>
+            <input type="range" name="rango" id="rango" min="0" max="100">
+            <br>
+            <input type="date" name="fecha" id="fecha">
+            <br>
+            <input type="time" name="hora" id="hora">
+            <br>
+            <input type="week" name="semanas" id="semanas">
+            <br>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
