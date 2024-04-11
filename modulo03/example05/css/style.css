@@ -1,0 +1,12 @@
+div {
+  display: none;
+  color: blue;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
